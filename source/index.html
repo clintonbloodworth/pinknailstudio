@@ -1,0 +1,32 @@
+---
+name: My page title
+title: My page title
+templateEngineOverride: hbs
+carousel_images:
+  - /images/carousel-1.jpg
+  - /images/carousel-2.jpg
+  - /images/carousel-3.jpg
+  - /images/carousel-4.jpg
+---
+
+<head>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
+<h1>{{name}}</h1>
+
+{{#each carousel_images}}
+  <img alt="" src="{{this}}">
+{{/each}}

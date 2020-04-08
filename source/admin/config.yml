@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+media_folder: "source/assets"
+public_folder: "assets/images"
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "source/index.html"
+        fields:
+          - label: "Name"
+            name: "name"
+            widget: "string"
+          - label: "Carousel Images"
+            name: "carousel_images"
+            widget: "list"
+            field: {label: "Carousel Image", name: carousel_image, widget: image}

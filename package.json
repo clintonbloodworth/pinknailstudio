@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "per-env",
+    "start:development": "eleventy --serve --input=source --output=distribution",
+    "start:production": "eleventy --input=source --output=distribution",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "per-env": "^1.0.2"
+  }
+}
