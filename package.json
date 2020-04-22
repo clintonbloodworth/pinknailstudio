@@ -60,9 +60,6 @@
     "lint": "npm run lint:markup && npm run lint:styles && npm run lint:scripts",
     "lint:markup": "eslint source/**/*.svelte",
     "lint:styles": "stylelint source/**/*.{svelte,scss}",
-    "lint:scripts": "eslint .",
-    "now-build": "npx per-env",
-    "now-build:development": ":",
-    "now-build:production": "npm start"
+    "lint:scripts": "eslint ."
   }
 }
