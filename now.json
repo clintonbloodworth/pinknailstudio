@@ -1,13 +1,4 @@
 {
-  "build": {
-    "env": {
-      "NODE_ENV": "production"
-    }
-  },
-  "env": {
-    "CONTENTFUL_SPACE": "dwnkzpruazj7",
-    "CONTENTFUL_TOKEN": "@contentful_token"
-  },
   "rewrites": [
     {
       "destination": "/api/get.js",
