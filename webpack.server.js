@@ -38,9 +38,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     libraryTarget: 'umd',
-    path: process.env.NODE_ENV === 'production'
-      ? path.resolve(__dirname, 'public', 'public')
-      : path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'public'),
   },
   resolve: {
     alias: {
