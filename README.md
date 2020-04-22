@@ -7,4 +7,4 @@
 ## Vendors
 - [Domain](https://siteground.com)
 - [CMS](https://app.contentful.com)
-- [Hosting](https://zeit.co)
+- [Hosting](https://vercel.com)
