@@ -8,14 +8,10 @@
     "CONTENTFUL_SPACE": "dwnkzpruazj7",
     "CONTENTFUL_TOKEN": "@contentful_token"
   },
-  "routes": [
+  "rewrites": [
     {
-      "dest": "/public/$1",
-      "src": "/(.+)"
-    },
-    {
-      "dest": "api/get.js",
-      "src": "/"
+      "destination": "/api/get.js",
+      "source": "/"
     }
   ],
   "version": 2
