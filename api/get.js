@@ -11,7 +11,7 @@ module.exports = async (request, response) => {
   } else {
     const { head, html } = render(payload);
 
-    response.setHeader('cache-control', 's-maxage=300, stale-while-revalidate');
+    response.setHeader('cache-control', `s-maxage=${process.env.MAX_AGE}, stale-while-revalidate`);
     response.setHeader('content-security-policy', `default-src 'self'; script-src 'self' 'nonce-${payload.nonce}' www.google-analytics.com maps.googleapis.com; style-src * 'unsafe-inline'; img-src * data:; font-src 'self' fonts.gstatic.com; block-all-mixed-content`);
     response.setHeader('strict-transport-security', 'max-age=31536000; includeSubdomains; preload');
     response.setHeader('x-frame-options', 'SAMEORIGIN');
