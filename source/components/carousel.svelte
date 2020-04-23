@@ -1,7 +1,7 @@
 <div class="container" aria-hidden="true">
   <div class="carousel" use:carousel>
     {#each images.carousel as image}
-      <img alt="" class="carousel-image" src="{image}">
+      <img alt="" class="image" src="{image}">
     {/each}
   </div>
 
@@ -35,7 +35,7 @@
     overflow: hidden;
   }
 
-  .carousel-image {
+  .image {
     display: block;
     height: var(--height);
     object-fit: cover;

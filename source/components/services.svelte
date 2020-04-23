@@ -232,7 +232,7 @@
 
     display: grid;
     grid-auto-flow: column;
-    grid-gap: 8rem;
+    grid-gap: 256px;
     justify-content: center;
     margin-top: var(--margin-top);
 
