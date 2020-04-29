@@ -69,9 +69,11 @@
           {item.price}
         </p>
 
-        <p class="dialog-description">
-          {item.description}
-        </p>
+        {#if item.description}
+          <p class="dialog-description">
+            {item.description}
+          </p>
+        {/if}
       </div>
     </Dialog>
   {/if}
