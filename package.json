@@ -63,6 +63,8 @@
     "lint:scripts": "eslint .",
     "now-build": "npx per-env",
     "now-build:development": ":",
-    "now-build:production": "npm start"
+    "now-build:development:comment": "This is a no-op locally to prevent a loop where `now dev` runs `npm start`, which in turn runs `now dev dev`.",
+    "now-build:production": "npm start",
+    "now-build:production:comment": "Vercel seems to consider the build command in its UI to be only for front-end code, and so Vercel functions are built separately. But our function relies on code built by webpack.server.js, so `now-build` is used in production to ensure `public/server.js` is in place before the Vercel function is built."
   }
 }
