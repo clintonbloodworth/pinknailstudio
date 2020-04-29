@@ -1,6 +1,7 @@
 # Pink Nail Studio
 
 1. `npx now`
+1. `npx now env pull`
 1. `npm install`
 1. `npm start`
 
