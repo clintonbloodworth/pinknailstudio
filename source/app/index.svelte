@@ -18,6 +18,7 @@
     border-radius: 4px;
     margin: 22px auto;
     max-width: 1065px;
+    overflow: hidden;
 
     @include breakpoint(m) {
       border-width: 0;
