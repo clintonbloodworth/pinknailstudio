@@ -34,7 +34,6 @@
   import 'focus-visible';
   import './styles/global';
   import './styles/colors';
-  import './styles/layout';
   import './styles/typography';
   import { setContext } from 'svelte';
   import Carousel from 'components/carousel';

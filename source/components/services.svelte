@@ -200,7 +200,7 @@
   .price {
     @include breakpoint(s) {
       font-size: 1.2rem;
-      margin-top: 0.4rem;
+      margin-top: 8px;
     }
   }
 
@@ -244,16 +244,13 @@
   }
 
   .button {
-    --padding-bottom: 24px;
-
-    padding-bottom: var(--padding-bottom);
+    padding-bottom: 24px;
     position: relative;
     text-transform: uppercase;
 
     @include breakpoint(s) {
-      --padding-bottom: 12px;
-
       font-size: 1.2rem;
+      padding-bottom: 12px;
     }
 
     &::before {

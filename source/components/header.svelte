@@ -21,9 +21,11 @@
     padding: 46px 74px;
 
     @include breakpoint(s) {
+      --padding-vertical: 16px;
+
       justify-content: center;
-      padding-bottom: 16px;
-      padding-top: 16px;
+      padding-bottom: var(--padding-vertical);
+      padding-top: var(--padding-vertical);
     }
   }
 
@@ -41,12 +43,10 @@
   }
 
   .logo {
-    --height: 88px;
-
-    height: var(--height);
+    height: 88px;
 
     @include breakpoint(s) {
-      --height: 56px;
+      height: 56px;
     }
   }
 </style>
