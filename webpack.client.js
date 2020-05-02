@@ -2,9 +2,9 @@ const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const path = require('path');
+const { scss } = require('svelte-preprocess');
 const TerserPlugin = require('terser-webpack-plugin');
 const webpack = require('webpack');
-const { sass } = require('svelte-preprocess-sass');
 
 module.exports = {
   devtool: process.env.NODE_ENV === 'production'
@@ -28,13 +28,13 @@ module.exports = {
               emitCss: true,
               hydratable: true,
               loopGuardTimeout: process.env.NODE_ENV !== 'production',
-              preprocess: {
-                style: sass({
+              preprocess: [
+                scss({
                   includePaths: [
                     path.resolve('source'),
                   ],
-                }, { name: 'scss' }),
-              },
+                }),
+              ],
             },
           },
         ],
