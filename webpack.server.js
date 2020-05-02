@@ -1,5 +1,5 @@
 const path = require('path');
-const { sass } = require('svelte-preprocess-sass');
+const { scss } = require('svelte-preprocess');
 
 module.exports = {
   entry: {
@@ -22,13 +22,13 @@ module.exports = {
               generate: 'ssr',
               hydratable: true,
               loopGuardTimeout: process.env.NODE_ENV !== 'production',
-              preprocess: {
-                style: sass({
+              preprocess: [
+                scss({
                   includePaths: [
                     path.resolve('source'),
                   ],
-                }, { name: 'scss' }),
-              },
+                }),
+              ],
             },
           },
         ],
