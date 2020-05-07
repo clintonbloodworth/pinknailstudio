@@ -5,6 +5,11 @@
 1. `npm install`
 1. `npm start`
 
+## Technologies
+- [Siema](https://pawelgrzybek.github.io/siema)
+- [Svelte](https://svelte.dev)
+- [Webpack](https://webpack.js.org)
+
 ## Vendors
 - [Domain](https://siteground.com)
 - [CMS](https://app.contentful.com)
