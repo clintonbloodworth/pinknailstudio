@@ -132,6 +132,8 @@
     --padding-bottom: 38px;
 
     break-inside: avoid;
+    display: grid;
+    grid-gap: 4px;
 
     &:not(:last-of-type) {
       padding-bottom: var(--padding-bottom);
