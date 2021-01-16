@@ -16,12 +16,13 @@ module.exports = {
           {
             loader: 'svelte-loader',
             options: {
-              css: false,
-              dev: process.env.NODE_ENV !== 'production',
-              format: 'cjs',
-              generate: 'ssr',
-              hydratable: true,
-              loopGuardTimeout: process.env.NODE_ENV !== 'production',
+              compilerOptions: {
+                css: false,
+                dev: process.env.NODE_ENV !== 'production',
+                format: 'cjs',
+                generate: 'ssr',
+                hydratable: true,
+              },
               preprocess: [
                 scss({
                   includePaths: [
